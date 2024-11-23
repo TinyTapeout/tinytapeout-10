@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 a48b1c74",
+  "repo": "https://github.com/rejunity/tt10-ternary-dot-product",
+  "commit": "de8a79763d55b123bfd3d8a24ce90ae1ebe5bf14",
+  "workflow_url": "https://github.com/rejunity/tt10-ternary-dot-product/actions/runs/11980406284",
+  "sort_id": 1732391623524,
+  "openlane_version": "OpenLane2 2.1.9",
+  "pdk_version": "open_pdks bdc9412b3e468c102d01b7cf6337be06ec6e9c9a"
+}
