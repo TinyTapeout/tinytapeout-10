@@ -1,0 +1,57 @@
+# Tiny Tapeout project information
+project:
+  title:        "Enigma - 52-bit Key Length"      # Project title
+  author:       "Virantha Ekanayake"      # Your name
+  discord:      "veezer"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Silicon implementation of an Enigma I machine with a limited plugboard supporting 3 wires"      # One line description of what your project does
+  language:     "Amaranth" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     10000000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_virantha_enigma"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "am_top.v"
+    - "latch.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "din[0]"
+  ui[1]: "din[1]"
+  ui[2]: "din[2]"
+  ui[3]: "din[3]"
+  ui[4]: "din[4]"
+  ui[5]: "cmd[0]"
+  ui[6]: "cmd[1]"
+  ui[7]: "cmd[2]"
+
+  # Outputs
+  uo[0]: "seg[0]"
+  uo[1]: "seg[1]"
+  uo[2]: "seg[2]"
+  uo[3]: "seg[3]"
+  uo[4]: "seg[4]"
+  uo[5]: "seg[5]"
+  uo[6]: "seg[6]"
+  uo[7]: "GND"
+
+  # Bidirectional pins
+  uio[0]: "dout[0]"
+  uio[1]: "dout[1]"
+  uio[2]: "dout[3]"
+  uio[3]: "dout[4]"
+  uio[4]: "dout[5]"
+  uio[5]: "ready"
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
