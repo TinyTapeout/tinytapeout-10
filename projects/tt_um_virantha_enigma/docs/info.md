@@ -53,43 +53,32 @@ yielding a key length of ~52-bits.
 [^5]: https://www.nsa.gov/portals/75/documents/about/cryptologic-heritage/historical-figures-publications/publications/wwii/CryptoMathEnigma_Miller.pdf
 
 ### Implementation
-It was my first time using the amazing Python-based hardware description tool
-Amaranth HDL[^7] to build, test, and generate the Verilog implementation.  This
-greatly simplified generating the hardware; because of the complexity of the way
-the rotors map their inputs and outputs, I would've been writing Python scripts
-anyway to generate all the case statements/control logic for the Verilog code.
-Amaranth let me cut out all the overhead, and also integrate easily with my
-reference Python implementation to generate tests.
+Using the Python-based hardware description tool Amaranth HDL[^7] for the first
+time made building, testing, and generating the Verilog implementation much
+easier. Given the complexity of the rotors’ input-output mappings, I would’ve
+needed to write Python scripts anyway to generate Verilog logic. Amaranth streamlined
+this process and allowed seamless integration with my reference Python
+implementation for test generation.
+
+- Rotor design:
+    - Meeting the tight area requirements involved several design iterations that
+    narrowly missed targets late in the cycle. Amaranth’s flexibility made
+    re-architecting much simpler. For example, my initial approach of implementing
+    three separate combinational hardware rotors was too large and lacked
+    configurability. I ultimately created a single reconfigurable rotor block that
+    processes data over six cycles, effectively forming a six-rotor pipeline (three
+    forward, three backward after reflection).  
+
 
 [^7]: https://amaranth-lang.org/docs/amaranth/latest/
 
-In addition, in order to meet the tight area requirements, I went through several different
-implementations that, late in the design cycle, just kept missing the area targets.  I
-am very thankful I used Amaranth/Python to build this as it made re-architecting things
-much simpler.  Some of the early design choices that didn't work out:
+- Plugboard Design:  
+   - Initial Attempt: A 26-entry, 5-bit lookup table using DFFs, which proved too large.  
 
-- Doing the scrambling datapath as 3 separate hardware rotors implemented as
-combinational blocks.  This became too large, and would've prevented me from
-being able to select the Rotor types. I finally settled on one Rotor block that 
-switches settings every time through, using the flopped output from the last
-cycle as the input to this cycle, thereby creating a "pipeline" of six rotors
-over six cycles (the six comes from 3 Rotors on the forward path, and then the
-data is reflected back through  the 3 Rotors in reverse before leaving the
-machine)
+   - Next Approach: A scan-chain-based design, but the hold-fix buffers and comparison logic made it even larger.  
 
-- Plugboard design:
-    - The simplest version I could come up with was a 26 entry 5-bit lookup
-    table implemented with DFFs.  This became too large.
+   - Final Solution: A 26-entry, 5-bit lookup table using Skywater 130 standard-cell latches. This worked well since the plugboard functions like a ROM, with only a few initial writes to set the configuration. These writes are precisely pulsed using the state machine.
 
-    - The next version was a scan chain based implementation, but I think either
-    the hold-fix buffers or comparison logic made it even larger than the DFF
-    memory.
-
-    - Finally, I had to switch to using a 26 entry x 5-bit lookup table
-    implemented using the Skywater 130 stdcell latches.  I felt fairly safe
-    using this, as the plugboard is basically used as a ROM, with only a few
-    writes at the beginning to set the plugboard settings.  These writes are
-    carefully pulsed using full cycles with the state machine.  
 
 | Key statistics |  |
 |-------------|-----|
@@ -100,7 +89,7 @@ machine)
 | Frequency| 35MHz |
 
 ### Operation
-When this Enigma machine is ready, it will accept 8-bits of input data (command
+The Enigma is designed to accept an 8-bit input (command
 plus data) at the clk edge.  The internal state machine then takes
 a varying number of clk cycles to respond, raising the "Ready" signal when it's
 ready to accept the next command.  If the command generates an output, the raw
@@ -123,8 +112,8 @@ The machine accepts the following 8 commands:
 |Encoding[^6]| Command | Data |Description|
 |----|----|---|---|
 |000 | NOP | N/A | Do nothing |
-|001 | LOAD_START | Setting 0-25 (A-Z) | Set the start position of a rotor.  Do this three times in succession to set each of the three rotors|
-|010 | LOAD_RING | Setting 0-25 (A-Z) | Set the ring setting of a rotor.  Do this three times in succession to set each of the three rotors|
+|001 | LOAD_START | Setting 0-25 (A-Z) | Set the start position of a rotor.  Do this three times in succession to set each of the three rotors (right to left)|
+|010 | LOAD_RING | Setting 0-25 (A-Z) | Set the ring setting of a rotor.  Do this three times in succession to set each of the three rotors (right to left)|
 |011 | RESET | N/A | Go back to the initial state |
 |100 | SCRAMBLE | Input char 0-25 (A-Z) | Run a letter through the rotor.  The Ready signal will be asserted when the scrambled character is output|
 |101 | LOAD_PLUG_ADDR | Src 0-25 (A-Z) | Set an internal register to where the start of the plug should go.  This command should be followed by LOAD_PLUG_DATA to set the destination|
@@ -134,13 +123,65 @@ The machine accepts the following 8 commands:
 
 #### Sample run
 
-TBD
+At some point, I'll have some code ready for running on the RPi on the PC, but for now, here
+is the pseudo code for setting up and scrambling/descrambling with this machine:
+```python
+    # Install the rotors
+    send_command(SET_ROTORS, 0)   # Set slot 0 to Rotor I
+    send_command(SET_ROTORS, 1)   # Set slot 0 to Rotor II
+    send_command(SET_ROTORS, 2)   # Set slot 0 to Rotor III
+
+    # Dial start position of the rotors
+    send_command(LOAD_START, 15)  # Set rotor 0 start position to P
+    send_command(LOAD_START, 5)   # Set rotor 1 start position to F
+    send_command(LOAD_START, 1)   # Set rotor 2 start position to B
+
+    # Dial ring position of the rotors
+    send_command(LOAD_RING, 18)  # Set rotor 0 start position to S
+    send_command(LOAD_RING, 5)   # Set rotor 1 start position to F
+    send_command(LOAD_RING, 24)  # Set rotor 2 start position to Y
+
+    # Set up the plugboard
+    # First, configure the plugboard default configuration with 
+    # no swizzling of letters
+    for i in range(26):
+        send_command(LOAD_PLUG_ADDR, i)
+        send_command(LOAD_PLUG_DATA, i)
+
+    # Now, plug in three wires
+    send_command(LOAD_PLUG_ADDR, 0)    # connect A -> N
+    send_command(LOAD_PLUG_DATA, 13)
+
+    send_command(LOAD_PLUG_ADDR, 13)   # connect N -> A
+    send_command(LOAD_PLUG_DATA, 0)
+
+    send_command(LOAD_PLUG_ADDR, 3)    # connect D -> E
+    send_command(LOAD_PLUG_DATA, 4)
+
+    send_command(LOAD_PLUG_ADDR, 4)   # connect E -> D
+    send_command(LOAD_PLUG_DATA, 3)
+
+    send_command(LOAD_PLUG_ADDR, 25)    # connect Z -> B
+    send_command(LOAD_PLUG_DATA, 1)
+
+    send_command(LOAD_PLUG_ADDR, 1)   # connect D -> Z
+    send_command(LOAD_PLUG_DATA, 25)
+
+    # Now, enter letters into the machine and watch the coded char
+    # appear on the display
+    send_command(SCRAMBLE, 11)  # 'L' -> 'X'
+    send_command(SCRAMBLE, 14)  # 'O' -> 'K'
+    .
+    .
+    .
+```
+
 
 [^6]: See the ```src/defines.py``` file
 
 ### Control FSM
 
-![alt text](fsm.svg)
+![alt text](images/fsm.png)
 
 The state machine diagram source can be found on github[^8].
 
@@ -148,8 +189,6 @@ The state machine diagram source can be found on github[^8].
 
 
 ## How to test
-
-## Explanation coming soon
 
 ### Design verification
 
