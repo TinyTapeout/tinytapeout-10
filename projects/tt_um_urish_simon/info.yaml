@@ -15,6 +15,7 @@ project:
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:
+    - "clock_divider_stage.v"
     - "galois_lfsr.v"
     - "inverter.v"
     - "project.v"
