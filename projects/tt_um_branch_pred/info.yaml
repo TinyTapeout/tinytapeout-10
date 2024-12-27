@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "TinyTapeout Minimal Branch Predictor"
+  author:       "Tristan Robitaille"
+  discord:      ""
+  description:  "A minimal perceptron-based branch predictor"
+  language:     "Verilog"
+  clock_hz:     1000000 # 10 MHz
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_branch_pred"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "branch_pred.v"
+    - "tt06-memory/src/latch_memory.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "inst_addr[0]"
+  ui[1]: "inst_addr[1]"
+  ui[2]: "inst_addr[2]"
+  ui[3]: "inst_addr[3]"
+  ui[4]: "inst_addr[4]"
+  ui[5]: "inst_addr[5]"
+  ui[6]: "inst_addr[6]"
+  ui[7]: "inst_addr[7]"
+
+  # Outputs
+  uo[0]: "pred_ready"
+  uo[1]: "prediction"
+  uo[2]: "training_done"
+  uo[3]: "mem_reset_done"
+  uo[4]: "DEBUG_new_data_avail_posedge"
+  uo[5]: "DEBUG_state_pred[0]"
+  uo[6]: "DEBUG_state_pred[1]"
+  uo[7]: "DEBUG_state_rst_mem"
+
+  # Bidirectional pins
+  uio[0]: "new_data_avail"              # Input
+  uio[1]: "direction_ground_truth"      # Input
+  uio[2]: "DEBUG_perceptron_index[0]"   # Output
+  uio[3]: "DEBUG_perceptron_index[1]"   # Output
+  uio[4]: "DEBUG_perceptron_index[2]"   # Output
+  uio[5]: "DEBUG_wr_en"                 # Output
+  uio[6]: "DEBUG_history_buffer_output" # Output
+  uio[7]: "history_buffer_request"      # Input
+
+# Do not change!
+yaml_version: 6
