@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 d89635e1",
+  "repo": "https://github.com/eggfly/tt10-xor-encryption",
+  "commit": "09e6b45adb693320c26d342f518ec0b31eaef638",
+  "workflow_url": "https://github.com/eggfly/tt10-xor-encryption/actions/runs/12565446312",
+  "sort_id": 1735692118641,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
