@@ -1,0 +1,49 @@
+63. Printing statistics.
+
+=== tt_um_MAC_Accelerator_OnSachinSharma ===
+
+   Number of wires:                127
+   Number of wire bits:            162
+   Number of public wires:           8
+   Number of public wire bits:      43
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                143
+     sky130_fd_sc_hd__a211o_2        2
+     sky130_fd_sc_hd__a21bo_2        2
+     sky130_fd_sc_hd__a21o_2        10
+     sky130_fd_sc_hd__a21oi_2        3
+     sky130_fd_sc_hd__a22o_2         4
+     sky130_fd_sc_hd__a22oi_2       11
+     sky130_fd_sc_hd__a31o_2         2
+     sky130_fd_sc_hd__and2_2         5
+     sky130_fd_sc_hd__and2b_2        3
+     sky130_fd_sc_hd__and3_2         5
+     sky130_fd_sc_hd__and3b_2        2
+     sky130_fd_sc_hd__and4_2        12
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nand2_2        9
+     sky130_fd_sc_hd__nand2b_2       3
+     sky130_fd_sc_hd__nand3_2        8
+     sky130_fd_sc_hd__nand4_2        3
+     sky130_fd_sc_hd__nor2_2        11
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__o21ai_2        2
+     sky130_fd_sc_hd__o21bai_2       3
+     sky130_fd_sc_hd__o22a_2         2
+     sky130_fd_sc_hd__or2_2          1
+     sky130_fd_sc_hd__or3_2          3
+     sky130_fd_sc_hd__or4_2          2
+     sky130_fd_sc_hd__xnor2_2       11
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for module '\tt_um_MAC_Accelerator_OnSachinSharma': 1311.257600
+     of which used for sequential elements: 0.000000 (0.00%)
+
