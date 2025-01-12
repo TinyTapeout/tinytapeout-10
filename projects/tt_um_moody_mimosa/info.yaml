@@ -1,0 +1,75 @@
+# Tiny Tapeout project information
+project:
+  title:        "Moody-mimosa"
+  author:       "D. Levante-Schmidiger"
+  discord:      "DSchmidiger"
+  description:  "Moody ASIC reacting to external stimuli"
+  language:     "Verilog"
+  clock_hz:     1000000
+  tiles:        "1x2"
+  top_module:   "tt_um_moody_mimosa"
+
+  source_files:
+    - "tt_um_moody_mimosa.v"
+    - "neurotransmitter/nt_cortisol_regulator.v"
+    - "neurotransmitter/nt_cortisol_system.v"
+    - "neurotransmitter/nt_gaba_regulator.v"
+    - "neurotransmitter/nt_gaba_system.v"
+    - "neurotransmitter/nt_dopamine_regulator.v"
+    - "neurotransmitter/nt_dopamine_system.v"
+    - "neurotransmitter/nt_serotonin_regulator.v"
+    - "neurotransmitter/nt_serotonin_system.v"
+    - "neurotransmitter/nt_norepinephrine_regulator.v"
+    - "neurotransmitter/nt_norepinephrine_system.v"
+    - "neurotransmitter/nt_neurotransmitter_level.v"
+    - "neurotransmitter/nt_neurotransmitter_system.v"
+    - "heartbeat/heartbeat_regulator.v"
+    - "nourishment/nourishment_system.v"
+    - "nourishment/nourishment_regulator.v"
+    - "sleep/vital_energy_system.v"
+    - "sleep/vital_energy_regulator.v"
+    - "sleep/sleep_regulator.v"
+    - "emotion/emotion_regulator.v"
+    - "action/action_regulator.v"
+    - "illness/illness_regulator.v"
+    - "illness/illness_system.v"
+    - "development_stage/development_stage_regulator.v"
+    - "development_stage/development_stage_system.v"
+    - "talk/remember_and_talk.v"
+    - "talk/speech_planner.v"
+    - "utility/dynamic_clock_divider.v"
+    - "utility/static_clock_divider.v"
+    - "utility/counter_with_pulse.v"
+
+pinout:
+  # Inputs
+  ui[0]: "TICKLE"
+  ui[1]: "PLAY_WITH"
+  ui[2]: "TALK_TO"
+  ui[3]: "CALM_DOWN"
+  ui[4]: "FEED"
+  ui[5]: "COOL"
+  ui[6]: "HOT"
+  ui[7]: "QUIET"
+
+  # Outputs
+  uo[0]: "SLEEPING"
+  uo[1]: "EATING"
+  uo[2]: "PLAYING"
+  uo[3]: "SMILING"
+  uo[4]: "BABBLING"
+  uo[5]: "KICKING_LEGS"
+  uo[6]: "DOING_NOTHING"
+  uo[7]: "CRYING"
+
+  # Bidirectional pins
+  uio[0]: "LOUD"
+  uio[1]: "BRIGHT"
+  uio[2]: "SPI_MISO"
+  uio[3]: "SPI_SCK"
+  uio[4]: "SPI_CS"
+  uio[5]: "SPI_MOSI"
+  uio[6]: "UART_TX"
+  uio[7]: "CLK_MODEL"
+
+yaml_version: 6
