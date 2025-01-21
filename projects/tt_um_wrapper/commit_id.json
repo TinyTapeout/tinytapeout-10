@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 9d3ca84b",
+  "repo": "https://github.com/meisterlampe99/tt10-6Digit7SegClock",
+  "commit": "af834dfbdd83dea6eb7389580c9ce1dd6691c4d4",
+  "workflow_url": "https://github.com/meisterlampe99/tt10-6Digit7SegClock/actions/runs/12788723687",
+  "sort_id": 1737447095370,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
