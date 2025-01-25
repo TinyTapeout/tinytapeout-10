@@ -1,0 +1,61 @@
+# Tiny Tapeout project information
+project:
+  title:        "Classic 8-bit era Programmable Sound Generator AY-3-8913"
+  author:       "Eric Farrow - ReJ aka Renaldas Zioma"
+  discord:      ""
+  description:  "The AY-3-8913 is a 3-voice programmable sound generator (PSG) chip from General Instruments. The AY-3-8913 is a smaller variant of AY-3-8910 or its analog YM2149."
+  language:     "Verilog"
+  clock_hz:     2000000 # Clock frequency in Hz
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_devmonk_ay8913"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "attenuation.v"
+    - "tone.v"
+    - "noise.v"
+    - "envelope.v"
+    - "signal_edge.v"
+    - "pwm.v"
+    - "tt_um_devmonk_ay8913.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "DA0 - multiplexed data/address bus LSB"
+  ui[1]: "DA1 - multiplexed data/address bus"
+  ui[2]: "DA2 - multiplexed data/address bus"
+  ui[3]: "DA3 - multiplexed data/address bus"
+  ui[4]: "DA4 - multiplexed data/address bus"
+  ui[5]: "DA5 - multiplexed data/address bus"
+  ui[6]: "DA6 - multiplexed data/address bus"
+  ui[7]: "DA7 - multiplexed data/address bus MSB"
+
+  # Outputs
+  uo[0]: "audio out (PWM)"
+  uo[1]: "digita audio LSB"
+  uo[2]: "digita audio "
+  uo[3]: "digita audio "
+  uo[4]: "digita audio "
+  uo[5]: "digita audio "
+  uo[6]: "digita audio "
+  uo[7]: "digita audio MSB"
+
+  # Bidirectional pins
+  uio[0]: "(in) **BC1** bus control"
+  uio[1]: "(in) **BDIR** bus direction"
+  uio[2]: "(in) **SEL0** clock divider"
+  uio[3]: "(in) **SEL1** clock divider"
+  uio[4]: "(out) channel A (PWM)"
+  uio[5]: "(out) channel B (PWM)"
+  uio[6]: "(out) channel C (PWM)"
+  uio[7]: "(out) AUDIO OUT master (PWM)"
+
+# Do not change!
+yaml_version: 6
