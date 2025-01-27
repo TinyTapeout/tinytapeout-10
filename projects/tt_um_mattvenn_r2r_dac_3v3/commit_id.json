@@ -1,0 +1,8 @@
+{
+  "app": "custom_gds action",
+  "repo": "https://github.com/mattvenn/tt08-analog-r2r-dac-3v3",
+  "commit": "523b41b04e391aa33845a56d9ff48911973ecad8",
+  "workflow_url": "https://github.com/mattvenn/tt08-analog-r2r-dac-3v3/actions/runs/12993923853",
+  "sort_id": 1737996900006,
+  "analog": true
+}
