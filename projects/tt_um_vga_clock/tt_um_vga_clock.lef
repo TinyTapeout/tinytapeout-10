@@ -67,7 +67,7 @@ MACRO tt_um_vga_clock
   PIN rst_n
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 141.070 110.520 141.370 111.520 ;
@@ -85,7 +85,7 @@ MACRO tt_um_vga_clock
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -94,7 +94,7 @@ MACRO tt_um_vga_clock
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.196500 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 132.790 110.520 133.090 111.520 ;
@@ -103,7 +103,7 @@ MACRO tt_um_vga_clock
   PIN ui_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met4 ;
         RECT 130.030 110.520 130.330 111.520 ;
@@ -208,7 +208,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 49.990 110.520 50.290 111.520 ;
@@ -217,7 +216,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 47.230 110.520 47.530 111.520 ;
@@ -226,7 +224,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 44.470 110.520 44.770 111.520 ;
@@ -235,7 +232,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 41.710 110.520 42.010 111.520 ;
@@ -244,7 +240,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 38.950 110.520 39.250 111.520 ;
@@ -253,7 +248,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 36.190 110.520 36.490 111.520 ;
@@ -262,7 +256,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 33.430 110.520 33.730 111.520 ;
@@ -271,7 +264,6 @@ MACRO tt_um_vga_clock
   PIN uio_oe[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 30.670 110.520 30.970 111.520 ;
@@ -280,7 +272,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -289,7 +280,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -298,7 +288,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 66.550 110.520 66.850 111.520 ;
@@ -307,7 +296,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -316,7 +304,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -325,7 +312,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -334,7 +320,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 55.510 110.520 55.810 111.520 ;
@@ -343,7 +328,6 @@ MACRO tt_um_vga_clock
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 52.750 110.520 53.050 111.520 ;
@@ -352,7 +336,7 @@ MACRO tt_um_vga_clock
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 94.150 110.520 94.450 111.520 ;
@@ -406,7 +390,7 @@ MACRO tt_um_vga_clock
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -415,7 +399,7 @@ MACRO tt_um_vga_clock
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.891000 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -423,34 +407,15 @@ MACRO tt_um_vga_clock
   END uo_out[7]
   OBS
       LAYER nwell ;
-        RECT 2.570 107.385 158.430 108.990 ;
-        RECT 2.570 101.945 158.430 104.775 ;
-        RECT 2.570 96.505 158.430 99.335 ;
-        RECT 2.570 91.065 158.430 93.895 ;
-        RECT 2.570 85.625 158.430 88.455 ;
-        RECT 2.570 80.185 158.430 83.015 ;
-        RECT 2.570 74.745 158.430 77.575 ;
-        RECT 2.570 69.305 158.430 72.135 ;
-        RECT 2.570 63.865 158.430 66.695 ;
-        RECT 2.570 58.425 158.430 61.255 ;
-        RECT 2.570 52.985 158.430 55.815 ;
-        RECT 2.570 47.545 158.430 50.375 ;
-        RECT 2.570 42.105 158.430 44.935 ;
-        RECT 2.570 36.665 158.430 39.495 ;
-        RECT 2.570 31.225 158.430 34.055 ;
-        RECT 2.570 25.785 158.430 28.615 ;
-        RECT 2.570 20.345 158.430 23.175 ;
-        RECT 2.570 14.905 158.430 17.735 ;
-        RECT 2.570 9.465 158.430 12.295 ;
-        RECT 2.570 4.025 158.430 6.855 ;
+        RECT 2.570 2.635 158.430 108.990 ;
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
-        RECT 2.760 2.480 158.240 109.040 ;
+        RECT 2.760 2.480 158.240 109.440 ;
       LAYER met2 ;
-        RECT 6.080 2.535 156.300 110.685 ;
+        RECT 7.000 2.535 155.380 110.685 ;
       LAYER met3 ;
-        RECT 8.805 2.555 155.875 110.665 ;
+        RECT 12.945 2.555 150.355 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -493,14 +458,15 @@ MACRO tt_um_vga_clock
         RECT 136.250 110.120 137.910 110.665 ;
         RECT 139.010 110.120 140.670 110.665 ;
         RECT 141.770 110.120 143.430 110.665 ;
-        RECT 30.655 109.440 144.145 110.120 ;
+        RECT 144.530 110.120 145.065 110.665 ;
+        RECT 30.655 109.440 145.065 110.120 ;
         RECT 30.655 57.975 56.750 109.440 ;
         RECT 59.150 57.975 60.050 109.440 ;
         RECT 62.450 57.975 95.620 109.440 ;
         RECT 98.020 57.975 98.920 109.440 ;
         RECT 101.320 57.975 134.490 109.440 ;
         RECT 136.890 57.975 137.790 109.440 ;
-        RECT 140.190 57.975 144.145 109.440 ;
+        RECT 140.190 57.975 145.065 109.440 ;
   END
 END tt_um_vga_clock
 END LIBRARY
