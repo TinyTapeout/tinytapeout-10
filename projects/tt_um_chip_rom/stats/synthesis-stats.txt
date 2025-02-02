@@ -1,4 +1,4 @@
-61. Printing statistics.
+63. Printing statistics.
 
 === tt_um_chip_rom ===
 
@@ -6,11 +6,15 @@
    Number of wire bits:             43
    Number of public wires:           8
    Number of public wire bits:      43
+   Number of ports:                  8
+   Number of port bits:             43
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 24
-     sky130_fd_sc_hd__buf_2         24
+     sky130_fd_sc_hd__buf_2          8
+     sky130_fd_sc_hd__conb_1        16
 
-   Chip area for module '\tt_um_chip_rom': 120.115200
+   Chip area for module '\tt_um_chip_rom': 100.096000
+     of which used for sequential elements: 0.000000 (0.00%)
 
