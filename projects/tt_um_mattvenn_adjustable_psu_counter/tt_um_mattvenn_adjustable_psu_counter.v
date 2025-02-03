@@ -24,7 +24,7 @@ module tt_um_mattvenn_adjustable_psu_counter (
 		.VPWR(VAPWR),
 		.VGND(VGND),
 		.clk(ua[1]),
-		.rst_n(ua[0]),
+		.n_reset(ua[0]),
 		.count({ua[2], ua[3], ua[4], ua[5]})
 	);
 
