@@ -1,0 +1,58 @@
+# Tiny Tapeout project information
+project:
+  title:        "Huffmann_Coder"      # Project title
+  author:       "Marvin Barth"      # Your name
+  discord:      "MarvinBrth"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "compresses ASCII input into Huffman codes"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_huffman_coder"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+  - "tt_um_huffman_coder.v"
+  - "huffman_coder.v"
+  - "huffman_table.v"
+  - "input_manager.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+
+  ui[0]: "ASCII_in[0]"   # ASCII-Zeichen Bit 0
+  ui[1]: "ASCII_in[1]"   # ASCII-Zeichen Bit 1
+  ui[2]: "ASCII_in[2]"   # ASCII-Zeichen Bit 2
+  ui[3]: "ASCII_in[3]"   # ASCII-Zeichen Bit 3
+  ui[4]: "ASCII_in[4]"   # ASCII-Zeichen Bit 4
+  ui[5]: "ASCII_in[5]"   # ASCII-Zeichen Bit 5
+  ui[6]: "ASCII_in[6]"   # ASCII-Zeichen Bit 6
+  ui[7]: "Load"          # Load-Signal (MSB)
+
+
+  uo[0]: "Huffman_out[0]"   # Huffman-Code Bit 0
+  uo[1]: "Huffman_out[1]"   # Huffman-Code Bit 1
+  uo[2]: "Huffman_out[2]"   # Huffman-Code Bit 2
+  uo[3]: "Huffman_out[3]"   # Huffman-Code Bit 3
+  uo[4]: "Huffman_out[4]"   # Huffman-Code Bit 4
+  uo[5]: "Huffman_out[5]"   # Huffman-Code Bit 5
+  uo[6]: "Huffman_out[6]"   # Huffman-Code Bit 6
+  uo[7]: "Huffman_out[7]"   # Huffman-Code Bit 7
+
+
+  uio[0]: "Huffman_out[8]"   # Huffman-Code Bit 8
+  uio[1]: "Huffman_out[9]"   # Huffman-Code Bit 9
+  uio[2]: "Valid_out"        # Valid-Signal (zeigt an, dass ein gültiger Code anliegt)
+  uio[3]: "Bit_length[0]"    # Länge des Huffman-Codes Bit 0
+  uio[4]: "Bit_length[1]"    # Länge des Huffman-Codes Bit 1
+  uio[5]: "Bit_length[2]"    # Länge des Huffman-Codes Bit 2
+  uio[6]: "Bit_length[3]"    # Länge des Huffman-Codes Bit 3
+  uio[7]: "" 
+
+# Do not change!
+yaml_version: 6
