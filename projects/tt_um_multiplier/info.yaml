@@ -1,0 +1,64 @@
+# Tiny Tapeout project information
+project:
+  title:        "Vedic multiplier"      # Project title
+  author:       "Vivek Chiranjit"      # Your name
+  discord:      "cj_pat"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "8-bit binary unsigned multiplier"      # One line description of what your project does
+  language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_multiplier"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "i2bit_mul.sv"
+    - "i4bit_mul.sv"
+    - "i8bit_mul.sv"
+    - "csa_1_4bit.sv"
+    - "csa_1_8bit.sv"
+    - "csa_2_4bit.sv"
+    - "csa_2_8bit.sv"
+    - "fa.sv"
+    - "ha.sv"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "uin"
+  ui[1]: "uin"
+  ui[2]: "uin"
+  ui[3]: "uin"
+  ui[4]: "uin"
+  ui[5]: "uin"
+  ui[6]: "uin"
+  ui[7]: "uin"
+
+  # Outputs
+  uo[0]: "uo"
+  uo[1]: "uo"
+  uo[2]: "uo"
+  uo[3]: "uo"
+  uo[4]: "uo"
+  uo[5]: "uo"
+  uo[6]: "uo"
+  uo[7]: "uo"
+
+  # Bidirectional pins
+  uio[0]: "uio"
+  uio[1]: "uio"
+  uio[2]: "uio"
+  uio[3]: "uio"
+  uio[4]: "uio"
+  uio[5]: "uio"
+  uio[6]: "uio"
+  uio[7]: "uio"
+
+# Do not change!
+yaml_version: 6
