@@ -28,10 +28,14 @@ The SoC includes a UART and an SPI controller.
 | 0x0000000 - 0x0FFFFFF | Flash |
 | 0x1000000 - 0x17FFFFF | RAM A |
 | 0x1800000 - 0x1FFFFFF | RAM B |
+| 0x7FFFF00 - 0x7FFFFFF | Internal RAM (32 bytes, wrapped) |
 | 0x8000000 - 0x8000007 | GPIO  |
 | 0x8000010 - 0x800001F | UART |
 | 0x8000020 - 0x8000027 | SPI |
 | 0x8000028 - 0x800002B | PWM |
+| 0x8000030 - 0x8000033 | DEBUG |
+| 0x8000034 - 0x800003B | TIME |
+| 0x8000040 - 0x8000047 | GAME |
 
 ### GPIO
 
@@ -71,6 +75,26 @@ The SoC includes a UART and an SPI controller.
 | Register | Address | Description |
 | -------- | ------- | ----------- |
 | LEVEL    | 0x8000028 (W) | Set the PWM output level (0-255) |
+
+### DEBUG
+
+See [debug docs](debug.md)
+
+### TIME
+
+| Register | Address | Description |
+| -------- | ------- | ----------- |
+| MTIME    | 0x8000034 (RW) | Get/set the 1MHz time count |
+| MTIMECMP | 0x8000038 (RW) | Get/set the time to trigger the timer interrupt |
+
+### GAME
+
+| Register | Address | Description |
+| -------- | ------- | ----------- |
+| Controller 1 | 0x80000040 (R) | Controller 1 state |
+| Controller 2 | 0x80000044 (R) | Controller 2 state |
+
+Controller state is in the low 12 bits of the register, in order (MSB to LSB): b, y, select, start, up, down, left, right, a, x, l, r
 
 # How to test
 

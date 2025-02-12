@@ -18,6 +18,7 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "latch_mem.v"
     - "tinyQV/cpu/tinyqv.v"
     - "tinyQV/cpu/alu.v"
     - "tinyQV/cpu/core.v"
@@ -28,10 +29,12 @@ project:
     - "tinyQV/cpu/qspi_ctrl.v"
     - "tinyQV/cpu/register.v"
     - "tinyQV/cpu/latch_reg.v"
+    - "tinyQV/cpu/time.v"
     - "tinyQV/peri/uart/uart_tx.v"
     - "tinyQV/peri/uart/uart_rx.v"
     - "tinyQV/peri/spi/spi.v"
     - "tinyQV/peri/pwm/pwm.v"
+    - "tinyQV/peri/ttgame/ttgame.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
@@ -39,10 +42,10 @@ pinout:
   ui[0]: "Interrupt 0"
   ui[1]: "Interrupt 1"
   ui[2]: "SPI MISO"
-  ui[3]: "GP in3"
-  ui[4]: "GP in4"
-  ui[5]: "GP in5"
-  ui[6]: "GP in6"
+  ui[3]: "1 MHz clock for time"
+  ui[4]: "Game controller latch"
+  ui[5]: "Game controller clock"
+  ui[6]: "Game controller data"
   ui[7]: "UART RX"
 
   # Outputs
