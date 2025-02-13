@@ -1,21 +1,20 @@
-# Tiny Tapeout project information
+---
 project:
-  title:        "vslc"  # Project title
-  author:       "James Keener"      # Your name
-  discord:      "jimktrains"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "A small PLC-like controller"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title: "vslc"
+  author: "James Keener"
+  discord: "jimktrains"
+  description: "A small PLC-like controller"
+  language: "Verilog"
+  # This is to mimic the clock on the icebreaker. It's what I have the
+  # timer and servo values pre-set for; however, those can be changed
+  # if you change the clock frequency, or ignored if you don't use them.
+  clock_hz: 12000000
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
-  # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_jimktrains_vslc"
+  top_module: "tt_um_jimktrains_vslc"
 
-  # List your project's source files here.
-  # Source files must be in ./src and you must list each source file separately, one per line.
-  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_jimktrains_vslc.v"
     - "tt_um_jimktrains_vslc_core.v"
@@ -24,8 +23,6 @@ project:
     - "tt_um_jimktrains_vslc_timer.v"
     - "tt_um_jimktrains_vslc_servo.v"
 
-
-# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
   ui[0]: "Input"
@@ -48,14 +45,14 @@ pinout:
   uo[7]: "Output"
 
   # Bidirectional pins
-  uio[0]: "Cycle Clock (input)"
-  uio[1]: "SPI CS (output)"
-  uio[2]: "COPI (output)"
-  uio[3]: "CIPO (input)"
-  uio[4]: "Stack Out (even bits)(output)"
-  uio[5]: "Stack Out (odd bits)(output)"
-  uio[6]: "Top Of Stack (output)"
-  uio[7]: "Timer Out (output)"
+  uio[0]: "EEPROM /CS"
+  uio[1]: "SPI COPI"
+  uio[2]: "SPI CIPO"
+  uio[3]: "SPI CLK"
+  uio[4]: "Timer Output"
+  uio[5]: "Complementry Timer Output"
+  uio[6]: "Servo Output"
+  uio[7]: "(unused)"
 
 # Do not change!
 yaml_version: 6
