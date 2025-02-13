@@ -1,7 +1,7 @@
 Metric,Value
 design__lint_error__count,0
 design__lint_timing_construct__count,0
-design__lint_warning__count,10
+design__lint_warning__count,3
 design__inferred_latch__count,0
 design__instance__count,579
 design__instance__area,4794.6
@@ -98,8 +98,8 @@ flow__warnings__count,1
 flow__errors__count,0
 design__instance__count__class:fill_cell,1209
 design__instance__count__class:tap_cell,225
-design__power_grid_violation__count__net:VGND,0
 design__power_grid_violation__count__net:VPWR,0
+design__power_grid_violation__count__net:VGND,0
 design__power_grid_violation__count,0
 timing__drv__floating__nets,0
 timing__drv__floating__pins,0
