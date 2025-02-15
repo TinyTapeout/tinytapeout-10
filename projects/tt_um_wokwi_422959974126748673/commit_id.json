@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 0985eb1d",
+  "repo": "https://github.com/Abdala-Alhouri-Nordicclays/My_own_chip",
+  "commit": "6e3bb46e94ccdb9fd2fbfb20f3aff85575cf3d37",
+  "workflow_url": "https://github.com/Abdala-Alhouri-Nordicclays/My_own_chip/actions/runs/13345875953",
+  "sort_id": 1739633335302,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
