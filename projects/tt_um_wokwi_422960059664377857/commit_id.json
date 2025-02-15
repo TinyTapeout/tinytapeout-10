@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 0985eb1d",
+  "repo": "https://github.com/Strider93/tt_wokwi_digital_LIF_neuron",
+  "commit": "226f2bbe070ff9f0c62143eff48326f925d68840",
+  "workflow_url": "https://github.com/Strider93/tt_wokwi_digital_LIF_neuron/actions/runs/13345955094",
+  "sort_id": 1739633282107,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
