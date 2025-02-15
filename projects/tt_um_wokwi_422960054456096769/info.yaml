@@ -1,0 +1,48 @@
+# Tiny Tapeout project information (Wokwi project)
+project:
+  wokwi_id:     422960054456096769       # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "3-bit register print"      # Project title
+  author:       "Emad Maroun"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Prints 3-bit value on 7-segment display"      # One line description of what your project does
+  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Bit 0"
+  ui[1]: "Bit 1"
+  ui[2]: "Bit 2"
+  ui[3]: "N/A"
+  ui[4]: "N/A"
+  ui[5]: "N/A"
+  ui[6]: "N/A"
+  ui[7]: "N/A"
+
+  # Outputs
+  uo[0]: "Segment"
+  uo[1]: "Segment"
+  uo[2]: "Segment"
+  uo[3]: "Segment"
+  uo[4]: "Segment"
+  uo[5]: "Segment"
+  uo[6]: "Segment"
+  uo[7]: "Segment"
+
+  # Bidirectional pins
+  uio[0]: "N/A"
+  uio[1]: "N/A"
+  uio[2]: "N/A"
+  uio[3]: "N/A"
+  uio[4]: "N/A"
+  uio[5]: "N/A"
+  uio[6]: "N/A"
+  uio[7]: "N/A"
+
+# Do not change!
+yaml_version: 6
