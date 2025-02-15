@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 0985eb1d",
+  "repo": "https://github.com/tobias1012/tt10-wowki-onehotdisplay",
+  "commit": "d74628f4bf38ddaf48a4f56ecbbbeb0fc8ec37a9",
+  "workflow_url": "https://github.com/tobias1012/tt10-wowki-onehotdisplay/actions/runs/13346207273",
+  "sort_id": 1739633006973,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
