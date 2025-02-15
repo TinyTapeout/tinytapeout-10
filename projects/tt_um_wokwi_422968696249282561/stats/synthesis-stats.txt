@@ -1,0 +1,62 @@
+64. Printing statistics.
+
+=== and_cell ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__and2_2         1
+
+   Chip area for module '\and_cell': 7.507200
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tt_um_wokwi_422968696249282561 ===
+
+   Number of wires:                  9
+   Number of wire bits:             44
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     and_cell                        1
+     sky130_fd_sc_hd__buf_2          5
+     sky130_fd_sc_hd__conb_1        19
+
+   Area for cell type \and_cell is unknown!
+
+   Chip area for module '\tt_um_wokwi_422968696249282561': 96.342400
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== design hierarchy ===
+
+   tt_um_wokwi_422968696249282561      1
+     and_cell                        1
+
+   Number of wires:                 12
+   Number of wire bits:             47
+   Number of public wires:          12
+   Number of public wire bits:      47
+   Number of ports:                 11
+   Number of port bits:             46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     sky130_fd_sc_hd__and2_2         1
+     sky130_fd_sc_hd__buf_2          5
+     sky130_fd_sc_hd__conb_1        19
+
+   Chip area for top module '\tt_um_wokwi_422968696249282561': 103.849600
+     of which used for sequential elements: 0.000000 (0.00%)
+
