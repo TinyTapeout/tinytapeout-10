@@ -1,8 +1,8 @@
 {
   "app": "custom_gds action",
   "repo": "https://github.com/christoph-weiser/tt10-vref",
-  "commit": "ff5a1038d89514c49c652af4cc3b10c5fbc657fc",
-  "workflow_url": "https://github.com/christoph-weiser/tt10-vref/actions/runs/13345842953",
+  "commit": "aa63f12da74f35c49aa052dba3b866e260108346",
+  "workflow_url": "https://github.com/christoph-weiser/tt10-vref/actions/runs/13442139296",
   "sort_id": 1739621523253,
   "analog": true
 }
