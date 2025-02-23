@@ -5,5 +5,8 @@
 -v $(TT_GL_VERILOG)/tt_pg_1v8_1.v
 -v $(TT_GL_VERILOG)/tt_pg_1v8_2.v
 -v $(TT_GL_VERILOG)/tt_pg_1v8_4.v
+-v $(TT_GL_VERILOG)/tt_pg_1v8_ll_1.v
+-v $(TT_GL_VERILOG)/tt_pg_1v8_ll_2.v
+-v $(TT_GL_VERILOG)/tt_pg_1v8_ll_4.v
 -v $(TT_GL_VERILOG)/tt_asw_3v3.v
 -v $(USER_PROJECT_VERILOG)/../projects/tt_um_factory_test/tt_um_factory_test.v

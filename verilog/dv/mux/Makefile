@@ -18,6 +18,7 @@ TOPLEVEL      ?= test_mux_tb
 MODULE        ?= test_mux
 TOPLEVEL_LANG ?= verilog
 COMPILE_ARGS  += -DMPRJ_IO_PADS=44
+COMPILE_ARGS  += -DSIM
 COMPILE_ARGS  += -DSIM_$(shell echo $(SIM) | tr a-z A-Z)=1
 COMPILE_ARGS  += -DROM_VMEM_PATH=\"../../../tt/rom/rom.vmem\"
 
@@ -49,7 +50,6 @@ ifeq ($(GATES),yes)
   COMPILE_ARGS    += -i -f $(abspath ../../includes/includes.gl.mux_top)
   COMPILE_ARGS    += -DGL_TEST
   COMPILE_ARGS    += -DFUNCTIONAL
-  COMPILE_ARGS    += -DSIM
   COMPILE_ARGS    += -DUNIT_DELAY=\#1
   COMPILE_ARGS    += -DUSE_POWER_PINS
   VERILOG_SOURCES += $(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v

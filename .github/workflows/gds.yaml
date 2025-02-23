@@ -119,6 +119,9 @@ jobs:
       - name: Create eFabless submission
         run: python ./tt/configure.py --create-efabless-submission
 
+      - name: Patch GL power pin assignments
+        run: sed -i 's/^ assign \(v[a-z0-9]*\) = \(v[a-z]*\);$/ assign \1 = \2; assign \2 = \1;/' efabless/verilog/gl/openframe_project_wrapper.v
+
       - name: upload GDS artifact
         if: success() || failure()
         uses: actions/upload-artifact@v4
