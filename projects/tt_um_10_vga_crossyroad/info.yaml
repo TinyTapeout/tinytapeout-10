@@ -1,0 +1,62 @@
+# Tiny Tapeout project information
+project:
+  title:        "Crossyroad"      # Project title
+  author:       "Matt, Jovan, Ryan"      # Your name
+  discord:      "jovankoledin_31860"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Crossyroad game recreated on an ASIC"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module: "tt_um_10_vga_crossyroad"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "crossyroad.v"
+    - "score.v"
+    - "scroll_h.v"
+    - "scroll_v.v"
+    - "scroll_h_follower.v"
+    - "scroll_v_follower.v"
+    - "vga.v"
+    - "tt_um_10_vga_crossyroad.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "move_btn"
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "red"
+  uo[1]: "green"
+  uo[2]: "blue"
+  uo[3]: "vsync"
+  uo[4]: "red"
+  uo[5]: "green"
+  uo[6]: "blue"
+  uo[7]: "hsync"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
