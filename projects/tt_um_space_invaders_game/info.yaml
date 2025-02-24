@@ -1,0 +1,72 @@
+# Tiny Tapeout project information
+project:
+  title:        "Space Invaders ASIC"      # Project title
+  author:       "Lukas Krupp, Adam Gebregziabher"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "HDL implementation of the retro game Space Invaders"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25000000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "2x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_space_invaders_game"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+    - "vga_sync_generator.v"
+    - "draw_small_alien.v"
+    - "draw_medium_alien.v"
+    - "draw_alien3.v"
+    - "draw_shooter.v"
+    - "alien3_rom.v"
+    - "medium_alien_rom.v"
+    - "shooter_rom.v"
+    - "small_alien_rom.v"
+    - "barrier_rom.v" 
+    - "draw_barrier.v"
+    - "heart_rom.v"
+    - "draw_heart.v"
+    - "trophy_rom.v"
+    - "draw_trophy.v" 
+    - "segment_rom.v"
+    - "draw_score.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "input1"  # move right
+  ui[1]: "input2"  # move left
+  ui[2]: "input3"  # shoot
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
+
+  # Outputs
+  uo[0]: "out1"
+  uo[1]: "out2"
+  uo[2]: "out3"
+  uo[3]: "out4"
+  uo[4]: "out5"
+  uo[5]: "out6"
+  uo[6]: "out7"
+  uo[7]: "out8"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
