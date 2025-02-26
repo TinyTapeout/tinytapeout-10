@@ -1,0 +1,242 @@
+70. Printing statistics.
+
+=== $paramod\ring_generator\NO_INVs=s32'00000000000000000000000000001011 ===
+
+   Number of wires:                 36
+   Number of wire bits:             77
+   Number of public wires:          36
+   Number of public wire bits:      77
+   Number of ports:                  5
+   Number of port bits:             46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     D_FF                           32
+     sky130_fd_sc_hd__buf_2         22
+     sky130_fd_sc_hd__xor2_2        10
+
+   Area for cell type \D_FF is unknown!
+
+   Chip area for module '$paramod\ring_generator\NO_INVs=s32'00000000000000000000000000001011': 272.761600
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== $paramod\ring_osc\NO_INVs=s32'00000000000000000000000000001011 ===
+
+   Number of wires:                  2
+   Number of wire bits:             12
+   Number of public wires:           2
+   Number of public wire bits:      12
+   Number of ports:                  2
+   Number of port bits:             12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     primitive_nand                  1
+     primitive_not                  10
+
+   Area for cell type \primitive_nand is unknown!
+   Area for cell type \primitive_not is unknown!
+
+=== D_FF ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of ports:                  4
+   Number of port bits:              4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     sky130_fd_sc_hd__dfrtp_2        1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\D_FF': 30.028800
+     of which used for sequential elements: 26.275200 (87.50%)
+
+=== primitive_nand ===
+
+   Number of wires:                  3
+   Number of wire bits:              3
+   Number of public wires:           3
+   Number of public wire bits:       3
+   Number of ports:                  3
+   Number of port bits:              3
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__nand2_2        1
+
+   Chip area for module '\primitive_nand': 6.256000
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== primitive_not ===
+
+   Number of wires:                  2
+   Number of wire bits:              2
+   Number of public wires:           2
+   Number of public wire bits:       2
+   Number of ports:                  2
+   Number of port bits:              2
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     sky130_fd_sc_hd__inv_2          1
+
+   Chip area for module '\primitive_not': 3.753600
+     of which used for sequential elements: 0.000000 (0.00%)
+
+=== tt_um_daobaanh_rng ===
+
+   Number of wires:                475
+   Number of wire bits:            510
+   Number of public wires:         168
+   Number of public wire bits:     203
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                449
+     $paramod\ring_generator\NO_INVs=s32'00000000000000000000000000001011      1
+     $paramod\ring_osc\NO_INVs=s32'00000000000000000000000000001011      1
+     sky130_fd_sc_hd__a211o_2        2
+     sky130_fd_sc_hd__a211oi_2       1
+     sky130_fd_sc_hd__a21bo_2        2
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2        17
+     sky130_fd_sc_hd__a21oi_2       11
+     sky130_fd_sc_hd__a221o_2        9
+     sky130_fd_sc_hd__a22o_2        34
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a311o_2        1
+     sky130_fd_sc_hd__a31o_2         8
+     sky130_fd_sc_hd__a31oi_2        2
+     sky130_fd_sc_hd__a32o_2         9
+     sky130_fd_sc_hd__a41o_2         2
+     sky130_fd_sc_hd__and2_2        21
+     sky130_fd_sc_hd__and2b_2        5
+     sky130_fd_sc_hd__and3_2        12
+     sky130_fd_sc_hd__and3b_2        3
+     sky130_fd_sc_hd__and4_2         9
+     sky130_fd_sc_hd__and4b_2        4
+     sky130_fd_sc_hd__and4bb_2       1
+     sky130_fd_sc_hd__buf_2          3
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfxtp_2      117
+     sky130_fd_sc_hd__inv_2         21
+     sky130_fd_sc_hd__mux2_1        23
+     sky130_fd_sc_hd__mux4_2         1
+     sky130_fd_sc_hd__nand2_2       11
+     sky130_fd_sc_hd__nand3_2        2
+     sky130_fd_sc_hd__nand3b_2       1
+     sky130_fd_sc_hd__nand4_2        1
+     sky130_fd_sc_hd__nor2_2        21
+     sky130_fd_sc_hd__nor4_2         1
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o211a_2        7
+     sky130_fd_sc_hd__o211ai_2       3
+     sky130_fd_sc_hd__o21a_2         5
+     sky130_fd_sc_hd__o21ai_2        2
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o221a_2        8
+     sky130_fd_sc_hd__o22a_2         4
+     sky130_fd_sc_hd__o311a_2        3
+     sky130_fd_sc_hd__o311ai_2       1
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__or2_2          9
+     sky130_fd_sc_hd__or3_2          6
+     sky130_fd_sc_hd__or3b_2         4
+     sky130_fd_sc_hd__or4_2          1
+     sky130_fd_sc_hd__or4b_2         4
+     sky130_fd_sc_hd__or4bb_2        4
+     sky130_fd_sc_hd__xnor2_2        2
+     sky130_fd_sc_hd__xor2_2         4
+
+   Area for cell type $paramod\ring_osc\NO_INVs=s32'00000000000000000000000000001011 is unknown!
+   Area for cell type $paramod\ring_generator\NO_INVs=s32'00000000000000000000000000001011 is unknown!
+
+   Chip area for module '\tt_um_daobaanh_rng': 5372.652800
+     of which used for sequential elements: 2488.636800 (46.32%)
+
+=== design hierarchy ===
+
+   tt_um_daobaanh_rng                1
+     $paramod\ring_generator\NO_INVs=s32'00000000000000000000000000001011      1
+       D_FF                         32
+     $paramod\ring_osc\NO_INVs=s32'00000000000000000000000000001011      1
+       primitive_nand                1
+       primitive_not                10
+
+   Number of wires:                696
+   Number of wire bits:            782
+   Number of public wires:         357
+   Number of public wire bits:     443
+   Number of ports:                166
+   Number of port bits:            252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                554
+     sky130_fd_sc_hd__a211o_2        2
+     sky130_fd_sc_hd__a211oi_2       1
+     sky130_fd_sc_hd__a21bo_2        2
+     sky130_fd_sc_hd__a21boi_2       1
+     sky130_fd_sc_hd__a21o_2        17
+     sky130_fd_sc_hd__a21oi_2       11
+     sky130_fd_sc_hd__a221o_2        9
+     sky130_fd_sc_hd__a22o_2        34
+     sky130_fd_sc_hd__a22oi_2        1
+     sky130_fd_sc_hd__a311o_2        1
+     sky130_fd_sc_hd__a31o_2         8
+     sky130_fd_sc_hd__a31oi_2        2
+     sky130_fd_sc_hd__a32o_2         9
+     sky130_fd_sc_hd__a41o_2         2
+     sky130_fd_sc_hd__and2_2        21
+     sky130_fd_sc_hd__and2b_2        5
+     sky130_fd_sc_hd__and3_2        12
+     sky130_fd_sc_hd__and3b_2        3
+     sky130_fd_sc_hd__and4_2         9
+     sky130_fd_sc_hd__and4b_2        4
+     sky130_fd_sc_hd__and4bb_2       1
+     sky130_fd_sc_hd__buf_2         25
+     sky130_fd_sc_hd__conb_1        20
+     sky130_fd_sc_hd__dfrtp_2       32
+     sky130_fd_sc_hd__dfxtp_2      117
+     sky130_fd_sc_hd__inv_2         63
+     sky130_fd_sc_hd__mux2_1        23
+     sky130_fd_sc_hd__mux4_2         1
+     sky130_fd_sc_hd__nand2_2       12
+     sky130_fd_sc_hd__nand3_2        2
+     sky130_fd_sc_hd__nand3b_2       1
+     sky130_fd_sc_hd__nand4_2        1
+     sky130_fd_sc_hd__nor2_2        21
+     sky130_fd_sc_hd__nor4_2         1
+     sky130_fd_sc_hd__o2111a_2       1
+     sky130_fd_sc_hd__o211a_2        7
+     sky130_fd_sc_hd__o211ai_2       3
+     sky130_fd_sc_hd__o21a_2         5
+     sky130_fd_sc_hd__o21ai_2        2
+     sky130_fd_sc_hd__o21ba_2        1
+     sky130_fd_sc_hd__o221a_2        8
+     sky130_fd_sc_hd__o22a_2         4
+     sky130_fd_sc_hd__o311a_2        3
+     sky130_fd_sc_hd__o311ai_2       1
+     sky130_fd_sc_hd__o31a_2         1
+     sky130_fd_sc_hd__or2_2          9
+     sky130_fd_sc_hd__or3_2          6
+     sky130_fd_sc_hd__or3b_2         4
+     sky130_fd_sc_hd__or4_2          1
+     sky130_fd_sc_hd__or4b_2         4
+     sky130_fd_sc_hd__or4bb_2        4
+     sky130_fd_sc_hd__xnor2_2        2
+     sky130_fd_sc_hd__xor2_2        14
+
+   Chip area for top module '\tt_um_daobaanh_rng': 6650.128000
+     of which used for sequential elements: 0.000000 (0.00%)
+
