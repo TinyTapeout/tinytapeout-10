@@ -1,0 +1,56 @@
+# Tiny Tapeout project information
+project:
+  title:        "Tappu"      # Project title
+  author:       "Tobias Jensen"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "A simple 8 bit CPU inspired by the esoteric language BF"      # One line description of what your project does
+  language:     "Chisel" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     20       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_tappu_tobias1012"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "tt_um_tappu_tobias1012.v"
+    - "ChiselTop.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Input for Tappu"
+  ui[1]: "Input for Tappu"
+  ui[2]: "Input for Tappu"
+  ui[3]: "Input for Tappu"
+  ui[4]: "Input for Tappu"
+  ui[5]: "Input for Tappu"
+  ui[6]: "Input for Tappu"
+  ui[7]: "Input for Tappu"
+
+  # Outputs
+  uo[0]: "Output for Tappu"
+  uo[1]: "Output for Tappu"
+  uo[2]: "Output for Tappu"
+  uo[3]: "Output for Tappu"
+  uo[4]: "Output for Tappu"
+  uo[5]: "Output for Tappu"
+  uo[6]: "Output for Tappu"
+  uo[7]: "Output for Tappu"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
