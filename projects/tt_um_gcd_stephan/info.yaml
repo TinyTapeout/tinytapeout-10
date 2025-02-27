@@ -1,11 +1,11 @@
 # Tiny Tapeout project information
 project:
-  title:        "Stephans TinyTapeout"      # Project title
+  title:        "15bit GCD"      # Project title
   author:       "stephan"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Greatest common denominator"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     100000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
@@ -39,14 +39,14 @@ pinout:
   ui[7]: "ui_in[7]"
 
   # Outputs
-  uo[0]: "uo_out[1]"
-  uo[1]: "uo_out[2]"
-  uo[2]: "uo_out[3]"
-  uo[3]: "uo_out[4]"
-  uo[4]: "uo_out[5]"
-  uo[5]: "uo_out[6]"
-  uo[6]: "uo_out[7]"
-  uo[7]: "uo_out[8]"
+  uo[0]: "uo_out[0]"
+  uo[1]: "uo_out[1]"
+  uo[2]: "uo_out[2]"
+  uo[3]: "uo_out[3]"
+  uo[4]: "uo_out[4]"
+  uo[5]: "uo_out[5]"
+  uo[6]: "uo_out[6]"
+  uo[7]: "uo_out[7]"
 
   # Bidirectional pins
   uio[0]: "uio_in[0]"
