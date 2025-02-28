@@ -1,0 +1,28 @@
+63. Printing statistics.
+
+=== tt_um_led_jellyant ===
+
+   Number of wires:                 23
+   Number of wire bits:             58
+   Number of public wires:           8
+   Number of public wire bits:      43
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     sky130_fd_sc_hd__a21oi_2        2
+     sky130_fd_sc_hd__and3_2         4
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfxtp_2        8
+     sky130_fd_sc_hd__inv_2          1
+     sky130_fd_sc_hd__nand2_2        1
+     sky130_fd_sc_hd__nor2_2         2
+     sky130_fd_sc_hd__o2bb2a_2       1
+     sky130_fd_sc_hd__xnor2_2        1
+     sky130_fd_sc_hd__xor2_2         3
+
+   Chip area for module '\tt_um_led_jellyant': 376.611200
+     of which used for sequential elements: 170.163200 (45.18%)
+
