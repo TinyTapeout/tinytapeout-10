@@ -1,0 +1,23 @@
+63. Printing statistics.
+
+=== tt_um_project ===
+
+   Number of wires:                 23
+   Number of wire bits:             58
+   Number of public wires:           8
+   Number of public wire bits:      43
+   Number of ports:                  8
+   Number of port bits:             43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     sky130_fd_sc_hd__and2_2         7
+     sky130_fd_sc_hd__and3_2         1
+     sky130_fd_sc_hd__conb_1        16
+     sky130_fd_sc_hd__dfxtp_2        8
+     sky130_fd_sc_hd__mux2_1         7
+
+   Chip area for module '\tt_um_project': 369.104000
+     of which used for sequential elements: 170.163200 (46.10%)
+
