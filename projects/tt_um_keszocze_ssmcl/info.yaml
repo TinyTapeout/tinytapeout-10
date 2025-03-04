@@ -1,0 +1,55 @@
+# Tiny Tapeout project information
+project:
+  title:        "SSMCl"      # Project title
+  author:       "Oliver Keszocze"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Slow 3-bit unsigned multiplier"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_keszocze_ssmcl"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "y[0]"
+  ui[1]: "y[1]"
+  ui[2]: "y[2]"
+  ui[3]: "x[0]"
+  ui[4]: "x[1]"
+  ui[5]: "x[2]"
+  ui[6]: ""
+  ui[7]: "start"
+
+  # Outputs
+  uo[0]: "product[0]"
+  uo[1]: "product[1]"
+  uo[2]: "product[2]"
+  uo[3]: "product[3]"
+  uo[4]: "product[4]"
+  uo[5]: "product[5]"
+  uo[6]: ""
+  uo[7]: "valid"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6

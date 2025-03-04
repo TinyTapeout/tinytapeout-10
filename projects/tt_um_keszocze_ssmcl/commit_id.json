@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 8f10bc8c",
+  "repo": "https://github.com/keszocze/tt10_SSMCl",
+  "commit": "8b54f83bb10cbd5c9795a8176acbde5d6a29dcad",
+  "workflow_url": "https://github.com/keszocze/tt10_SSMCl/actions/runs/13653287015",
+  "sort_id": 1739633490208,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
