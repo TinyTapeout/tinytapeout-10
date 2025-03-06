@@ -28,3 +28,7 @@ https://github.com/ADDTDR/HPDL-1414-Pmod-Module
 
 
 ![hpdl-1414 pmod](img/image.png)
+
+
+## Signal test 
+![alt text](<img/Screenshot from 2025-02-26 22-02-32.png>)
