@@ -1,0 +1,50 @@
+# Tiny Tapeout project information
+project:
+  title: "Tiny Musical" # Project title
+  author: "Kenneth Petersen" # Your name
+  discord: "" # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description: "A tiny musical note generator with 16 notes across 4 octaves and tremolo effect" # One line description of what your project does
+  language: "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz: 10000000 # Clock frequency in Hz (10 MHz - adjust if your TinyTapeout uses a different clock)
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x1" # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module: "tt_um_kentrane_tinyspectrum"
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "Note select bit 0"
+  ui[1]: "Note select bit 1"
+  ui[2]: "Note select bit 2"
+  ui[3]: "Note select bit 3"
+  ui[4]: "Octave select bit 0"
+  ui[5]: "Octave select bit 1"
+  ui[6]: "Enable tone"
+  ui[7]: "Enable tremolo"
+  # Outputs
+  
+  uo[0]: "Audio out"
+  uo[1]: "Note LED 1"
+  uo[2]: "Note LED 2"
+  uo[3]: "Note LED 3"
+  uo[4]: "Note LED 4"
+  uo[5]: "Note LED 5"
+  uo[6]: "Note LED 6"
+  uo[7]: "Note LED 7"
+
+  # Bidirectional pins
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
+  uio[3]: ""
+  uio[4]: ""
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+# Do not change!
+yaml_version: 6
