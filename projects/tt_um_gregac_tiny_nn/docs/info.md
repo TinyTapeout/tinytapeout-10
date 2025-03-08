@@ -34,7 +34,7 @@ relevant (some cycles the output should be ignored and some it should be
 captured).
 
 - ui_in, uio_in - 16-bit input, ui_in is top byte
-- uio_out - 8-bit output
+- uo_out - 8-bit output
 
 https://github.com/GregAC/tiny-nn should contain full documentation with the
 details and software to use the accelerator (both a work in progress at tapeout
