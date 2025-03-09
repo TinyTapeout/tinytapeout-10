@@ -9,11 +9,17 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-`a * b = r`
+The design consists of a RAM and an approximate multiplier `a * b = r` based on DRUM: A Dynamic Range Unbiased Multiplier for
+Approximate Applications by Hashemi et. al.
 
 ## How to test
 
-`a` times `b` should be `r`, most of the time.
+`r = a * b`. Write data to `a` and `b`. Then read the result/s from the RAM. The product results should differ if the frequency is increased.
+
+Address map:
+- 0 to 7 => product result
+- 8 => multiplicand 1
+- 9 => multiplicand 2
 
 ## External hardware
 

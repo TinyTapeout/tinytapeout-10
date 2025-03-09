@@ -22,34 +22,34 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "multiplicand_a(0)"
-  ui[1]: "multiplicand_a(1)"
-  ui[2]: "multiplicand_a(2)"
-  ui[3]: "multiplicant_a(3)"
-  ui[4]: "multiplicand_b(0)"
-  ui[5]: "multiplicand_b(1)"
-  ui[6]: "multiplicand_b(2)"
-  ui[7]: "multiplicant_b(3)"
+  ui[0]: "addr[0]"
+  ui[1]: "addr[1]"
+  ui[2]: "addr[2]"
+  ui[3]: "addr[3]"
+  ui[4]: ""
+  ui[5]: "result write enable"
+  ui[6]: "tristate output enable"
+  ui[7]: "RAM write enable"
 
   # Outputs
-  uo[0]: "product(0)"
-  uo[1]: "product(1)"
-  uo[2]: "product(2)"
-  uo[3]: "product(3)"
-  uo[4]: "product(4)"
-  uo[5]: "product(5)"
-  uo[6]: "product(6)"
-  uo[7]: "product(7)"
+  uo[0]: "ram_out(0)"
+  uo[1]: "ram_out(1)"
+  uo[2]: "ram_out(2)"
+  uo[3]: "ram_out(3)"
+  uo[4]: "ram_out(4)"
+  uo[5]: "ram_out(5)"
+  uo[6]: "ram_out(6)"
+  uo[7]: "ram_out(7)"
 
   # Bidirectional pins
-  uio[0]: ""
-  uio[1]: ""
-  uio[2]: ""
-  uio[3]: ""
-  uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[0]: "ram_in(0) or result(0)"
+  uio[1]: "ram_in(1) or result(1)"
+  uio[2]: "ram_in(2) or result(2)"
+  uio[3]: "ram_in(3) or result(3)"
+  uio[4]: "ram_in(4) or result(4)"
+  uio[5]: "ram_in(5) or result(5)"
+  uio[6]: "ram_in(6) or result(6)"
+  uio[7]: "ram_in(7) or result(7)"
 
 # Do not change!
 yaml_version: 6
