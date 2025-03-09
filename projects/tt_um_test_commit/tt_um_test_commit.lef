@@ -431,6 +431,22 @@ MACRO tt_um_test_commit
         RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
+  OBS
+      LAYER nwell ;
+        RECT 132.420 8.220 150.035 14.245 ;
+      LAYER li1 ;
+        RECT 132.660 6.865 149.855 14.320 ;
+      LAYER met1 ;
+        RECT 131.175 2.760 152.740 14.320 ;
+      LAYER met2 ;
+        RECT 130.805 1.720 152.730 13.315 ;
+      LAYER met3 ;
+        RECT 9.990 1.190 152.710 11.645 ;
+      LAYER met4 ;
+        RECT 9.990 8.370 151.045 14.030 ;
+      LAYER met5 ;
+        RECT 139.025 8.590 150.825 14.150 ;
+  END
 END tt_um_test_commit
 END LIBRARY
 
