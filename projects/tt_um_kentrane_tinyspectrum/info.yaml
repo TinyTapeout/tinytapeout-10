@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title: "Tiny Musical" # Project title
+  title: "Tiny piano" # Project title
   author: "Kenneth Petersen" # Your name
   discord: "" # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description: "A tiny musical note generator with 16 notes across 4 octaves and tremolo effect" # One line description of what your project does
