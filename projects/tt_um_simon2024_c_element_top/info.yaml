@@ -3,7 +3,7 @@ project:
   title:        "Muller C-element"      # Project title
   author:       "simon2024"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Standard cell implementation of Muller C-elemnt and small testing structures"      # One line description of what your project does
+  description:  "An attempt to do a standard cell implementation of Muller C-element"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -21,7 +21,11 @@ project:
     - "compound_c_element.v"
     - "inferred_inverter.v"
     - "inverter_chain_counter.sv"
+    - "celc_chain_counter.sv"
+    - "celcomb_chain_counter.sv"
     - "inverter_chain.v"
+    - "celc_chain.v"
+    - "celcomb_chain.v"
     - "inv4.v"
     - "celem.v"
 
