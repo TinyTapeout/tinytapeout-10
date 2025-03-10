@@ -18,31 +18,32 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "hvsync_generator.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: "SNES goes here"
+  ui[0]: ""
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
+  ui[4]: "gamepad_latch"
+  ui[5]: "gamepad_clk"
+  ui[6]: "gamepad_data"
   ui[7]: ""
 
   # Outputs
-  uo[0]: "VGA goes here"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "R1"
+  uo[1]: "G1"
+  uo[2]: "B1"
+  uo[3]: "VSync"
+  uo[4]: "R0"
+  uo[5]: "G0"
+  uo[6]: "B0"
+  uo[7]: "HSync"
 
   # Bidirectional pins
-  uio[0]: "Audio goes here?"
+  uio[0]: ""
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""

@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-TBD.
+It's just the controller example from VGA playground, but you can also move a little square on the screen. It would have been an entire game if I hadn't taken a break when the Efabless shutdown was announced.
 
 ## How to test
 
-TBD.
+Operating the controller D-Pad will move the square around the screen.
 
 ## External hardware
 
-TBD. Quick list: VGA PMOD, Audio PMOD, SNES PMOD
+It accepts the VGA PMOD, Audio PMOD, and SNES PMOD. The pinout is configured for the demoscene competition.
