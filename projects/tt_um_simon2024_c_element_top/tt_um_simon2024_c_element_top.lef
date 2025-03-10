@@ -50,6 +50,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
     PORT
       LAYER met4 ;
         RECT 143.830 110.520 144.130 111.520 ;
@@ -84,7 +85,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 135.550 110.520 135.850 111.520 ;
@@ -93,7 +94,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 132.790 110.520 133.090 111.520 ;
@@ -102,7 +103,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.159000 ;
     PORT
       LAYER met4 ;
         RECT 130.030 110.520 130.330 111.520 ;
@@ -111,7 +112,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 127.270 110.520 127.570 111.520 ;
@@ -120,7 +121,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 124.510 110.520 124.810 111.520 ;
@@ -129,6 +130,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 121.750 110.520 122.050 111.520 ;
@@ -137,6 +139,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN ui_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
     PORT
       LAYER met4 ;
         RECT 118.990 110.520 119.290 111.520 ;
@@ -153,7 +156,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met4 ;
         RECT 113.470 110.520 113.770 111.520 ;
@@ -162,7 +164,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.126000 ;
     PORT
       LAYER met4 ;
         RECT 110.710 110.520 111.010 111.520 ;
@@ -171,7 +172,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 107.950 110.520 108.250 111.520 ;
@@ -180,7 +180,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 105.190 110.520 105.490 111.520 ;
@@ -189,7 +188,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 102.430 110.520 102.730 111.520 ;
@@ -198,7 +196,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.485100 ;
     PORT
       LAYER met4 ;
         RECT 99.670 110.520 99.970 111.520 ;
@@ -207,7 +204,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.485100 ;
     PORT
       LAYER met4 ;
         RECT 96.910 110.520 97.210 111.520 ;
@@ -280,7 +276,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 72.070 110.520 72.370 111.520 ;
@@ -289,7 +285,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 69.310 110.520 69.610 111.520 ;
@@ -298,7 +294,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 66.550 110.520 66.850 111.520 ;
@@ -307,7 +303,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 63.790 110.520 64.090 111.520 ;
@@ -316,7 +312,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 61.030 110.520 61.330 111.520 ;
@@ -325,7 +321,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 58.270 110.520 58.570 111.520 ;
@@ -334,7 +330,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 55.510 110.520 55.810 111.520 ;
@@ -343,7 +339,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uio_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.891000 ;
     PORT
       LAYER met4 ;
         RECT 52.750 110.520 53.050 111.520 ;
@@ -352,7 +348,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.795200 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 94.150 110.520 94.450 111.520 ;
@@ -361,7 +357,8 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[1]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.524450 ;
+    ANTENNAGATEAREA 0.172000 ;
+    ANTENNADIFFAREA 0.374400 ;
     PORT
       LAYER met4 ;
         RECT 91.390 110.520 91.690 111.520 ;
@@ -370,7 +367,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.524450 ;
     PORT
       LAYER met4 ;
         RECT 88.630 110.520 88.930 111.520 ;
@@ -379,7 +375,7 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.524450 ;
+    ANTENNADIFFAREA 0.445500 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -388,7 +384,8 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.524450 ;
+    ANTENNAGATEAREA 0.172000 ;
+    ANTENNADIFFAREA 0.374400 ;
     PORT
       LAYER met4 ;
         RECT 83.110 110.520 83.410 111.520 ;
@@ -397,7 +394,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 1.524450 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -406,8 +402,6 @@ MACRO tt_um_simon2024_c_element_top
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.172000 ;
-    ANTENNADIFFAREA 0.374400 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -423,15 +417,15 @@ MACRO tt_um_simon2024_c_element_top
   END uo_out[7]
   OBS
       LAYER nwell ;
-        RECT 2.570 2.635 158.430 108.990 ;
+        RECT 2.570 2.635 158.430 109.280 ;
       LAYER li1 ;
         RECT 2.760 2.635 158.240 108.885 ;
       LAYER met1 ;
         RECT 2.760 2.480 158.240 109.780 ;
       LAYER met2 ;
-        RECT 18.310 2.535 142.510 110.685 ;
+        RECT 6.080 2.535 156.760 110.685 ;
       LAYER met3 ;
-        RECT 18.290 2.555 142.535 110.665 ;
+        RECT 18.290 2.555 153.115 110.665 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
@@ -473,14 +467,15 @@ MACRO tt_um_simon2024_c_element_top
         RECT 133.490 110.120 135.150 110.665 ;
         RECT 136.250 110.120 137.910 110.665 ;
         RECT 139.010 110.120 140.670 110.665 ;
-        RECT 30.655 109.440 141.385 110.120 ;
-        RECT 30.655 102.175 56.750 109.440 ;
-        RECT 59.150 102.175 60.050 109.440 ;
-        RECT 62.450 102.175 95.620 109.440 ;
-        RECT 98.020 102.175 98.920 109.440 ;
-        RECT 101.320 102.175 134.490 109.440 ;
-        RECT 136.890 102.175 137.790 109.440 ;
-        RECT 140.190 102.175 141.385 109.440 ;
+        RECT 141.770 110.120 143.430 110.665 ;
+        RECT 30.655 109.440 144.145 110.120 ;
+        RECT 30.655 39.615 56.750 109.440 ;
+        RECT 59.150 39.615 60.050 109.440 ;
+        RECT 62.450 39.615 95.620 109.440 ;
+        RECT 98.020 39.615 98.920 109.440 ;
+        RECT 101.320 39.615 134.490 109.440 ;
+        RECT 136.890 39.615 137.790 109.440 ;
+        RECT 140.190 39.615 144.145 109.440 ;
   END
 END tt_um_simon2024_c_element_top
 END LIBRARY
