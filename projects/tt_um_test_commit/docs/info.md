@@ -117,14 +117,25 @@ General information on microrobot requirements regarding on-board electronics ca
 
 
 # 4. Design Choices [↩](#tt10---microrobot-circuits-documentation-)
+
+![Layour Closeup](img/tt10_magic_layout_closeup.png)
+![Size Relation compared to Dogbot](img/tt10_magic_layout_size_relation2Dogbot.png)
+
 ## Bias Generator
+![Bias Generator](img/tt10_biasGenerator_xchem_schematic.png)
 
 ## Oscillator
-
-
+![Oscillator](img/tt10_osc_xchem_schematic.png)
+![Schmitt Trigger](img/tt10_schmittTrigger_xchem_schematic.png)
 
 # 5. Results [↩](#tt10---microrobot-circuits-documentation-)
+## Simulations
+![Topcell Parasitic Simulation](img/tt10_topcell_parax_simulation.png)
+![Topcell Oscillator Output Closeup](img/tt10_topcell_parax_simulation_waveform.png)
 
+
+## Post-Tapeout measaurements
+TBD
 
 # References
 <a id="1">[1]</a> <br>
