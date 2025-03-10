@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-The input can be switched around to find the code to make the LED display show the letter "S".
+Echoes out a predefined text onto a 16x2 character LCD.
 
 ## How to test
 
-Currently by connecting output 0 to LED display segment pins A C D F G, and IN0-7 pins to switches.
+Connect up a character LCD according to the pinout, and set the clock.
 
 ## External hardware
 
-Seven segment LED display and 8 switches for the input
+A 16x2 character LCD (LCD1602)

@@ -1,36 +1,45 @@
-# Tiny Tapeout project information (Wokwi project)
+# Tiny Tapeout project information
 project:
-  wokwi_id:     422960078645704705  # Set this to the ID of your Wokwi project (the number from the project's URL)
+  #wokwi_id:     422960078645704705  # Set this to the ID of your Wokwi project (the number from the project's URL)
   title:        "Hero on Tape"      # Project title
   author:       "Marcus Sand"       # Your name
-  discord:      "HeroGamers"        # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Not yet decided"   # One line description of what your project does
-  language:     "Wokwi"             # other examples include SystemVerilog, Amaranth, VHDL, etc
+  discord:      "herogamers"        # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Echoes out a predefined text onto a 16x2 character LCD."   # One line description of what your project does
+  language:     "Verilog"             # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0                   # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_wokwi_422960078645704705"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "project.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "IN0"
-  ui[1]: "IN1"
-  ui[2]: "IN2"
-  ui[3]: "IN3"
-  ui[4]: "IN4"
-  ui[5]: "IN5"
-  ui[6]: "IN6"
-  ui[7]: "IN7"
+  ui[0]: "CLK"
+  ui[1]: ""
+  ui[2]: ""
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: ""
 
   # Outputs
-  uo[0]: "OUT0"
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
+  uo[0]: "RS"
+  uo[1]: "E"
+  uo[2]: "D4"
+  uo[3]: "D5"
+  uo[4]: "D6"
+  uo[5]: "D7"
   uo[6]: ""
   uo[7]: ""
 
