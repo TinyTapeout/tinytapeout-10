@@ -1,6 +1,6 @@
 ---
 project:
-  title: "vslc"
+  title: "VSLC - Very Small Logic Controller with a timer and servo control"
   author: "James Keener"
   discord: "jimktrains"
   description: "A small PLC-like controller"
