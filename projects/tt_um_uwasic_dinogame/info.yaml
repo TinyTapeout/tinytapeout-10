@@ -1,0 +1,79 @@
+# Tiny Tapeout project information
+project:
+  title:        "UW ASIC - Optimized Dino"      # Project title
+  author:       "University of Waterloo ASIC Design Team"      # Your name
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "Dino game, but only 2 tiles!"      # One line description of what your project does
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     25175000       # Clock frequency in Hz (or 0 if not applicable)
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "1x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:  "tt_um_uwasic_dinogame"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "debounce.v"
+    - "dino_game_top.v"
+    - "dino_render.v"
+    - "dino_rom.v"
+    - "graphics_top.v"
+    - "hvsync_generator.v"
+    - "lfsr.v"
+    - "obs_render.v"
+    - "obs_rom.v"
+    - "obstacles.v"
+    - "player_controller.v"
+    - "player_physics.v"
+    - "score.v"
+    - "score_render.v"
+    - "audio_interface.v"
+    - "jump_sound_player.v"
+    - "game_over_sound_player.v"
+    - "bg_object.v"
+    - "bg_object_rom.v"
+    - "bg_render.v"
+    - "bg_line.v"
+    - "priority_encoder.v"
+    - "color_decoder.v"
+    - "ai_controller.v"
+    - "gamepad_pmod.v"
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "ui0"
+  ui[1]: "ui1"
+  ui[2]: "ui2"
+  ui[3]: "ui3"
+  ui[4]: "ui4"
+  ui[5]: "ui5"
+  ui[6]: "ui6"
+  ui[7]: "ui7"
+
+  # Outputs
+  uo[0]: "uo0"
+  uo[1]: "uo1"
+  uo[2]: "uo2"
+  uo[3]: "uo3"
+  uo[4]: "uo4"
+  uo[5]: "uo5"
+  uo[6]: "uo6"
+  uo[7]: "uo7"
+
+  # Bidirectional pins
+  uio[0]: "uio0"
+  uio[1]: "uio1"
+  uio[2]: "uio2"
+  uio[3]: "uio3"
+  uio[4]: "uio4"
+  uio[5]: "uio5"
+  uio[6]: "uio6"
+  uio[7]: "uio7"
+
+# Do not change!
+yaml_version: 6
