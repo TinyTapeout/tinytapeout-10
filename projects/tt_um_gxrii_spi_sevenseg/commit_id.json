@@ -1,0 +1,9 @@
+{
+  "app": "Tiny Tapeout tt10 8f10bc8c",
+  "repo": "https://github.com/garima19bajpayi/tt10-spi-7seg",
+  "commit": "69e30e7d7583b207f092d5e1d4a561aa020aaa79",
+  "workflow_url": "https://github.com/garima19bajpayi/tt10-spi-7seg/actions/runs/13818718423",
+  "sort_id": 1734793399962,
+  "openlane_version": "OpenLane2 2.2.9",
+  "pdk_version": "open_pdks 0fe599b2afb6708d281543108caf8310912f54af"
+}
