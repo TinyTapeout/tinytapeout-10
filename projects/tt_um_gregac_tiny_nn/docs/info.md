@@ -42,6 +42,35 @@ time!).
 
 ## How to test
 
+There are 3 test modes to test basic input output.
+
+### ASCII test
+
+Place 16'hFFFF on the input {ui_in, uio_in} and hold it and on the output you
+will observe a repeating pattern:
+
+ - 8'h54
+ - 8'h2d
+ - 8'h4e
+ - 8'h4e
+
+This is 'T-NN' in ASCII
+
+### Pulse Test
+
+Place 16'hF000 on the input {ui_in, uio_in} and hold it and on the output you
+will observe a repeating pattern:
+
+ - 8'haa
+ - 8'h55
+
+### Count Test
+
+Place 16'hF1XX on the input {ui_in, uio_in} where XX is any 8-bit number and on
+the output you will observe a count down from that number.
+
+### Accumulate Operation
+
 The simplest operation is the accumulate one. We'll configure it to add two
 numbers at a time with a -3.5 bias and RELU. Then we'll add 1.0 + 2.0 and 3.0 +
 4.0. Put the following on the input over successive clocks
@@ -56,6 +85,9 @@ numbers at a time with a -3.5 bias and RELU. Then we'll add 1.0 + 2.0 and 3.0 +
 
 On the output you should observe:
 
+ - 16'hX
+ - 16'hX
+ - 16'hX
  - 16'hX
  - 16'hX
  - 16'hX
