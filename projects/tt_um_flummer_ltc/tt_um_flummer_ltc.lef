@@ -157,7 +157,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 113.470 110.520 113.770 111.520 ;
@@ -166,7 +166,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[2]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 110.710 110.520 111.010 111.520 ;
@@ -175,7 +175,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[3]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 107.950 110.520 108.250 111.520 ;
@@ -184,7 +184,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 105.190 110.520 105.490 111.520 ;
@@ -193,7 +193,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 102.430 110.520 102.730 111.520 ;
@@ -202,7 +202,7 @@ MACRO tt_um_flummer_ltc
   PIN uio_in[6]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.159000 ;
+    ANTENNAGATEAREA 0.213000 ;
     PORT
       LAYER met4 ;
         RECT 99.670 110.520 99.970 111.520 ;
@@ -366,7 +366,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[2]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 88.630 110.520 88.930 111.520 ;
@@ -375,7 +375,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[3]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 85.870 110.520 86.170 111.520 ;
@@ -384,7 +384,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 83.110 110.520 83.410 111.520 ;
@@ -393,7 +393,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[5]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 80.350 110.520 80.650 111.520 ;
@@ -402,7 +402,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[6]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 77.590 110.520 77.890 111.520 ;
@@ -411,7 +411,7 @@ MACRO tt_um_flummer_ltc
   PIN uo_out[7]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.445500 ;
+    ANTENNADIFFAREA 0.795200 ;
     PORT
       LAYER met4 ;
         RECT 74.830 110.520 75.130 111.520 ;
@@ -425,9 +425,9 @@ MACRO tt_um_flummer_ltc
       LAYER met1 ;
         RECT 2.760 2.480 158.240 109.040 ;
       LAYER met2 ;
-        RECT 6.540 2.535 155.380 110.685 ;
+        RECT 5.160 2.535 156.760 111.365 ;
       LAYER met3 ;
-        RECT 12.945 2.555 144.370 110.665 ;
+        RECT 14.785 2.555 148.515 111.345 ;
       LAYER met4 ;
         RECT 31.370 110.120 33.030 110.665 ;
         RECT 34.130 110.120 35.790 110.665 ;
