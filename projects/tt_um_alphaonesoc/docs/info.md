@@ -8,7 +8,8 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 ## How it works
 
-A simple 32-bit RISC-V SoC, the project works by flashing the instruction code into the memory and observing the outputs over your desired method, via GPIO or UART
+A simple 32-bit RISC-V SoC on the RV32EC ISA, the project works by flashing the instruction code into the memory and observing the outputs over your desired method, via GPIO, UART or SPI
+The TT10-IHP submission is based entirely on MichaelBell's TinyQV from TT-06.
 
 ## How to test
 
