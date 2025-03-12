@@ -1,0 +1,63 @@
+# Tiny Tapeout project information
+project:
+  title:        "SPI FPU"
+  author:       "Sebastian Pfeiler"
+  discord:      "Qwendo"
+  description:  "A 32bit floating point adder accessible over spi"
+  language:     "Verilog"
+  clock_hz:     50000000 # Clock frequency in Hz (or 0 if not applicable)
+
+  tiles: "2x2"
+
+  top_module:  "tt_um_Qwendu_spi_fpu"
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - "first_bit_position.v"
+    - "float_adder_v2.v"
+    - "left_shifter.v"
+    - "project.v"
+    - "right_shifter.v"
+    - "sampler.v"
+    - "serial_in_parallel_out.v"
+    - "spi_fpu.v"
+    - "spi_rx.v"
+
+
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+pinout:
+  # Inputs
+  ui[0]: "SPI_CLK"
+  ui[1]: "SPI_NCS"
+  ui[2]: "SPI_IN"
+  ui[3]: "Unused"
+  ui[4]: "Unused"
+  ui[5]: "Unused"
+  ui[6]: "Unused"
+  ui[7]: "Unused"
+
+  # Outputs
+  uo[0]: "SPI_OUT"
+  uo[1]: "Unused"
+  uo[2]: "Unused"
+  uo[3]: "Unused"
+  uo[4]: "Unused"
+  uo[5]: "Unused"
+  uo[6]: "Unused"
+  uo[7]: "Unused"
+
+  # Bidirectional pins
+  uio[0]: "Unused"
+  uio[1]: "Unused"
+  uio[2]: "Unused"
+  uio[3]: "Unused"
+  uio[4]: "Unused"
+  uio[5]: "Unused"
+  uio[6]: "Unused"
+  uio[7]: "Unused"
+
+# Do not change!
+yaml_version: 6
