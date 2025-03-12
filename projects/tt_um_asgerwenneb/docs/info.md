@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-This is how it works
+Hopefully it's going to be a small SRAM unit, with some way of testing it.
 
 ## How to test
 
-This is how to test
+Haven't figured this out yet
 
 ## External hardware
 
-Nothing yet
+We'll see, but no analog pins
