@@ -17,4 +17,4 @@ TBD
 
 ## External hardware
 
-Flash and RAM PMOD
+Flash and RAM PMOD (not really)
