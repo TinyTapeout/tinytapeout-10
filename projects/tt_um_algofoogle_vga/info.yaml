@@ -1,0 +1,58 @@
+# Tiny Tapeout project information
+project:
+  title:        IHP VGA demo
+  author:       algofoogle (Anton Maurovic)
+  discord:      algofoogle
+  description:  Simple VGA demo for IHP tapeout (inc. Matt Venn's VGA clock)
+  language:     Verilog
+  clock_hz:     25_000_000
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: 1x2          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  # Your top module name must start with "tt_um_". Make it unique by including your github username:
+  top_module:   tt_um_algofoogle_vga
+
+  # List your project's source files here.
+  # Source files must be in ./src and you must list each source file separately, one per line.
+  # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
+  source_files:
+    - vga_sync.v
+    - mv_vga_clock.v
+    - project.v
+
+# The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
+# This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+pinout:
+  # Inputs
+  ui[0]: "adj_hrs"
+  ui[1]: "adj_min"
+  ui[2]: "adj_sec"
+  ui[3]: ""
+  ui[4]: ""
+  ui[5]: ""
+  ui[6]: ""
+  ui[7]: "mode"
+
+  # These are compatible with the RGB222 Tiny VGA PMOD (https://github.com/mole99/tiny-vga)
+  uo[0]: "r1"
+  uo[1]: "g1"
+  uo[2]: "b1"
+  uo[3]: "vsync"
+  uo[4]: "r0"
+  uo[5]: "g0"
+  uo[6]: "b0"
+  uo[7]: "hsync"
+
+  # Bidirectional pins
+  uio[0]: "hmax"
+  uio[1]: "vmax"
+  uio[2]: "hblank"
+  uio[3]: "vblank"
+  uio[4]: "visible"
+  uio[5]: ""
+  uio[6]: ""
+  uio[7]: ""
+
+# Do not change!
+yaml_version: 6
