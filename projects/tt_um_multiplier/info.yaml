@@ -12,21 +12,29 @@ project:
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_multiplier"
+  # top_module:  "tt_um_uart_spi"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "csa_1_4bit.sv"
+    - "csa_2_4bit.sv"
+    - "csa_1_8bit.sv"
+    - "csa_2_8bit.sv"
+    - "ha.sv"
+    - "fa.sv"
     - "i2bit_mul.sv"
     - "i4bit_mul.sv"
     - "i8bit_mul.sv"
-    - "csa_1_4bit.sv"
-    - "csa_1_8bit.sv"
-    - "csa_2_4bit.sv"
-    - "csa_2_8bit.sv"
-    - "fa.sv"
-    - "ha.sv"
+    
+    # - "uart_spi_top.sv"
+    # - "uart_rx_tx_loopback.sv"
+    # - "uart_rx.sv"
+    # - "uart_tx.sv"
+    # - "spi_slave.sv"
+ 
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:

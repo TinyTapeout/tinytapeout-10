@@ -8,12 +8,19 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
+This is a 8-bit binary multiplier
 
-This project is a binary vedic 8bit multiplier with UART and SPI
+Inputs:
+mul_ip_A
+mul_ip_B
+
+Ouputs:
+prod_low  
+prod_high
 
 ## How to test
+Give the two 8-bit inputs thorugh ui_in and uio_in. The multiplied data will be received at uo_out and uio_out
 
-This project is a binary vedic 8bit multiplier with UART and SPI
 
 ## External hardware
 
